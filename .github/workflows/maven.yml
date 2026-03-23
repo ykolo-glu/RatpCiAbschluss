@@ -43,3 +43,12 @@ jobs:
       with:
         name: ykologlu
         path: target/*.jar
+
+    - name: Upload JAR to ftp Server
+      if: success()
+      uses: sebastianpopp/ftp-action@releases/v2
+      with:
+        host: rathgeb.at
+        user: f018212f
+        password: HTL-Steyr4400
+        localDir: target/ykologlu.jar
