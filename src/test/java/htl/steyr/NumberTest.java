@@ -11,6 +11,10 @@ class NumberTest {
         Number numberPositive = new Number(1);
         Number otherPositive = new Number(2);
         assertEquals(3, numberPositive.add(otherPositive));
+
+        Number numberPositive2 = new Number(6);
+        Number otherPositive2 = new Number(7);
+        assertEquals(13, numberPositive.add(otherPositive));
     }
 
     @Test
@@ -18,6 +22,10 @@ class NumberTest {
         Number numberNegative = new Number(-1);
         Number otherNegative = new Number(-2);
         assertEquals(-3, numberNegative.add(otherNegative));
+
+        Number numberNegative2 = new Number(-6);
+        Number otherNegative2 = new Number(-7);
+        assertEquals(-13, numberNegative.add(otherNegative));
     }
 
     @Test
@@ -33,6 +41,9 @@ class NumberTest {
         Number number = new Number(10);
         Number other = new Number(2);
         assertEquals(5, number.divide(other));
+        Number number2 = new Number(12);
+        Number other2 = new Number(6);
+        assertEquals(2, number2.divide(other2));
     }
 
     @Test
@@ -47,11 +58,15 @@ class NumberTest {
     @Test
     void isPrime() {
         assertTrue(new Number(11).isPrime());
+        assertTrue(new Number(2).isPrime());
+        assertTrue(new Number(13).isPrime());
     }
 
     @Test
     void isNotPrime() {
         assertFalse(new Number(12).isPrime());
+        assertFalse(new Number(14).isPrime());
+        assertFalse(new Number(15).isPrime());
     }
 
     @Test
