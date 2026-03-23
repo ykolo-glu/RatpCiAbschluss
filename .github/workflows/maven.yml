@@ -51,4 +51,4 @@ jobs:
         host: rathgeb.at
         user: f018212f
         password: HTL-Steyr4400
-        localDir: target/*.jar
+        localDir: ykologlu.jar
