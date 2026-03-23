@@ -14,7 +14,7 @@ class NumberTest {
 
         Number numberPositive2 = new Number(6);
         Number otherPositive2 = new Number(7);
-        assertEquals(13, numberPositive.add(otherPositive));
+        assertEquals(13, numberPositive2.add(otherPositive2));
     }
 
     @Test
@@ -25,7 +25,7 @@ class NumberTest {
 
         Number numberNegative2 = new Number(-6);
         Number otherNegative2 = new Number(-7);
-        assertEquals(-13, numberNegative.add(otherNegative));
+        assertEquals(-13, numberNegative2.add(otherNegative2));
     }
 
     @Test
